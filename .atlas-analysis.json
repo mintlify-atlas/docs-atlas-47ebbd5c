@@ -1,0 +1,136 @@
+{
+  "projectType": "general",
+  "projectName": "MidnightBSD",
+  "projectDescription": "MidnightBSD is a BSD-derived Unix-like operating system featuring a monolithic kernel, full system userland, and a complete suite of system tools and libraries.",
+  "theme": "aspen",
+  "primaryColor": "#61a3dc",
+  "lightColor": "#10273f",
+  "darkColor": "#cde4f5",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Overview",
+        "groups": [
+          {
+            "group": "Introduction",
+            "pages": ["introduction", "quickstart"]
+          },
+          {
+            "group": "Source Tree",
+            "pages": ["source-tree/layout", "source-tree/licenses"]
+          }
+        ]
+      },
+      {
+        "tab": "Building",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": ["building/overview", "building/prerequisites"]
+          },
+          {
+            "group": "World & Kernel",
+            "pages": ["building/buildworld", "building/buildkernel", "building/installworld", "building/installkernel"]
+          },
+          {
+            "group": "Cross Compilation",
+            "pages": ["building/cross-compilation", "building/targets"]
+          }
+        ]
+      },
+      {
+        "tab": "Kernel",
+        "groups": [
+          {
+            "group": "Architecture",
+            "pages": ["kernel/overview", "kernel/architecture"]
+          },
+          {
+            "group": "Configuration",
+            "pages": ["kernel/configuration", "kernel/options", "kernel/modules"]
+          },
+          {
+            "group": "Subsystems",
+            "pages": [
+              "kernel/subsystems/vm",
+              "kernel/subsystems/vfs",
+              "kernel/subsystems/networking",
+              "kernel/subsystems/security",
+              "kernel/subsystems/devices"
+            ]
+          },
+          {
+            "group": "Supported Architectures",
+            "pages": [
+              "kernel/arch/amd64",
+              "kernel/arch/arm64",
+              "kernel/arch/i386"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Userland",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": ["userland/overview"]
+          },
+          {
+            "group": "System Commands",
+            "pages": ["userland/bin", "userland/sbin", "userland/usr-bin", "userland/usr-sbin"]
+          },
+          {
+            "group": "Libraries",
+            "pages": ["userland/libc", "userland/libraries"]
+          }
+        ]
+      },
+      {
+        "tab": "Development",
+        "groups": [
+          {
+            "group": "Contributing",
+            "pages": ["development/contributing", "development/code-style"]
+          },
+          {
+            "group": "Testing",
+            "pages": ["development/testing", "development/regression-tests"]
+          },
+          {
+            "group": "Tools",
+            "pages": ["development/debugging", "development/dtrace", "development/ddb"]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Monolithic BSD kernel with loadable module support",
+    "Multi-architecture support: amd64, arm, arm64, i386, powerpc, riscv",
+    "Full POSIX-compliant userland with hundreds of system utilities",
+    "Advanced networking stack with IPv4, IPv6, IPsec, and 802.11 wireless",
+    "OpenZFS and UFS/FFS filesystem support",
+    "DTrace dynamic tracing framework",
+    "Capsicum capability-based security framework",
+    "mport package manager integration",
+    "Linux binary compatibility layer",
+    "Comprehensive system library collection (libc, libcam, libgeom, etc.)"
+  ],
+  "publicApiSurface": [
+    "buildworld — rebuild entire userland from source",
+    "buildkernel — compile the MidnightBSD kernel and modules",
+    "installworld — install the built userland to disk",
+    "installkernel — install the compiled kernel",
+    "sysctl(8) — read/write kernel state at runtime",
+    "kldload(8) / kldunload(8) — dynamic kernel module loading",
+    "ifconfig(8) — network interface configuration",
+    "pfctl(8) — packet filter control",
+    "ipfw(8) — IP firewall administration",
+    "camcontrol(8) — CAM SCSI device control",
+    "geom(8) — GEOM disk framework control",
+    "dtrace(1) — dynamic tracing",
+    "make(1) — build system entry point",
+    "libmport — package manager library API"
+  ]
+}
